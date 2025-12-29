@@ -121,7 +121,7 @@ export async function POST(req: Request) {
 
   const { message } = await req.json();
 
-  const response = await fetch("https://api.chutes.ai/v1/chat/completions", {
+  const response = await fetch("https://lm.chutes.ai/v1/chat/completions", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
